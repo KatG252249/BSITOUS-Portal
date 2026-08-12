@@ -1,0 +1,122 @@
+{
+  "alerts": [
+    {
+      "text": "Opening of Academic Year 2026-2027 will start on Aug. 17, 2026.",
+      "link": "announcements.html",
+      "linkLabel": "Read More",
+      "icon": "alert-circle"
+    },
+    {
+      "text": "Adjustment period will be held from Aug. 17 to Sept. 17, 2026.",
+      "link": "index.html#key-dates",
+      "linkLabel": "View Calendar",
+      "icon": "calendar"
+    },
+    {
+      "text": "\"The Source Code\" Issue #8 Org Newsletter is now downloadable.",
+      "link": "announcements.html#newsletter",
+      "linkLabel": "Get PDF",
+      "icon": "book-open"
+    }
+  ],
+  "featuredEvent": {
+    "title": "Opening of the new academic year",
+    "date": "August 17, 2026",
+    "description": "The new academic year will start on this date."
+  },
+  "announcements": [
+    {
+      "id": "advisory-1",
+      "category": "urgent",
+      "tag": "Urgent Update",
+      "date": "August 12, 2026",
+      "title": "Extension of Subject Add/Drop Period (ACE Form Submissions)",
+      "content": "Please be advised that the submission of ACE Forms for schedule adjustments has been extended. Ensure all prerequisites are verified by your year-level student representatives before submitting to the Program Chair's office. Forms submitted without rep verification signatures will not be processed.",
+      "attachments": [
+        {
+          "text": "PUP OUS Official Forms Page",
+          "url": "https://www.pup.edu.ph/ous/forms",
+          "icon": "file-text",
+          "isExternal": true
+        },
+        {
+          "text": "Book Advisor Sign-off",
+          "url": "services.html#booking",
+          "icon": "calendar",
+          "isExternal": false
+        }
+      ]
+    },
+    {
+      "id": "advisory-2",
+      "category": "academic",
+      "tag": "Academic Notice",
+      "date": "August 8, 2026",
+      "title": "Online LMS Credential Activation for First Year Students",
+      "content": "All newly enrolled first-year BSIT students must activate their Open Distance Learning (ODL) LMS credentials. Verification emails containing temporary login details have been sent to your registered personal email addresses. Contact the ICT support representative if you have not received your account by August 15.",
+      "attachments": [
+        {
+          "text": "Go to LMS Portal (odl.pup.edu.ph)",
+          "url": "https://odl.pup.edu.ph",
+          "icon": "external-link",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "id": "advisory-3",
+      "category": "org",
+      "tag": "Student Org",
+      "date": "August 5, 2026",
+      "title": "BSIT Student Assembly: Tech Convergence 2026",
+      "content": "The PUP OUS BSIT Student Organization invites all year levels to join the annual General Assembly. We will discuss program policies, online learning tips, and introduce this year's student representatives. Zoom credentials and links will be shared in your respective year-level chats.",
+      "attachments": []
+    },
+    {
+      "id": "advisory-4",
+      "category": "academic",
+      "tag": "Academic Notice",
+      "date": "July 30, 2026",
+      "title": "List of Available Bridging Courses for Non-IT Shifters",
+      "content": "For students who shifted or transitioned into the BSIT program from non-IT fields, the evaluation list of recommended bridging courses is now uploaded. Please check your SIS and coordinate with the department evaluator for approval of courses before registration.",
+      "attachments": [
+        {
+          "text": "Bridging FAQ",
+          "url": "faq.html",
+          "icon": "help-circle",
+          "isExternal": false
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "date": "August 1 - 25, 2026",
+      "title": "Enrollment and Subject Registrations",
+      "content": "Online registration via SIS. Late registration and manual adjustment of schedules (ACE forms) can be submitted for review. Direct coordination with student representatives for bridging queries is highly encouraged.",
+      "icon": "user-check",
+      "active": true
+    },
+    {
+      "date": "September 28 - 30, 2026",
+      "title": "Midterm Examination Week",
+      "content": "Scheduled online testing and submission of major project milestones. Make sure to check the specific schedules assigned by professors for synchronously proctored assessments.",
+      "icon": "pen-tool",
+      "active": false
+    },
+    {
+      "date": "November 14, 2026",
+      "title": "Grade Finalization & Project Defenses",
+      "content": "Final project evaluations, Capstone mock defenses, and grade reporting by the faculty. Ensure all outstanding compliance records and lab submissions are uploaded to the LMS.",
+      "icon": "file-check-2",
+      "active": false
+    },
+    {
+      "date": "November 28, 2026",
+      "title": "Clearance & Graduation Application",
+      "content": "Submission of completion grades and administrative clearance sign-offs with the program chair for graduating students. Start of preparation for next semester curriculum advisories.",
+      "icon": "award",
+      "active": false
+    }
+  ]
+}
