@@ -75,65 +75,278 @@
 
   <main class="container" style="padding: 3rem 1.5rem; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem;">
     <!-- LEFT COLUMN: FAQ ACCORDION -->
-    <div style="display: flex; flex-direction: column; gap: 2rem;">
+    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
       <div class="section-header" style="margin-bottom: 0;">
         <h2>Frequently Asked Questions</h2>
         <p>Common administrative and curricular queries for BSIT students.</p>
       </div>
 
-      <div class="faq-accordion">
-        <!-- FAQ Item 1 -->
-        <div class="faq-item active">
-          <button class="faq-trigger">
-            How do bridging courses work for non-IT shifters/graduates?
-            <i data-lucide="chevron-down"></i>
-          </button>
-          <div class="faq-panel">
-            <p>Students entering the BSIT program from unrelated fields (e.g. non-tech courses or associate degrees)
-              must take Bridging Courses (like basic computing and intro programming) before registering for core
-              subjects. Coordinates with the Department Evaluator to evaluate your transcripts and get the official list
-              of required bridging units. Submit the evaluation sheet during enrollment.</p>
+      <!-- Category 1: Tech & Learning Platforms -->
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="color: var(--color-sky-dark); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--color-navy-light); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+          <i data-lucide="monitor" style="width: 18px; height: 18px;"></i>
+          Tech & Learning Platforms
+        </h3>
+        <div class="faq-accordion">
+          <!-- FAQ 1.1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">SINTA</span>
+                What should I do if I can't log in to eMabini or my courses are missing/incorrect?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>File a ticket in PUP SINTA under Open University System > OLMS (Office of Learning Management System).</p>
+            </div>
+          </div>
+
+          <!-- FAQ 1.2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">SINTA</span>
+                How do I request assistance if my PUP Webmail or SIS account is locked out?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Submit a ticket on PUP SINTA under ICT Services > Request for Webmail / Information Systems Support.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 1.3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                Where can I get official installers for Cisco Packet Tracer, MySQL/DBMS, or Java IDEs for our labs?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Check the Dev & Lab Toolkit page on this site for verified links, or coordinate with your Course Specialist (CS) for the required software versions.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 1.4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                Do we need high-spec laptops/computers for the BSIT program?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>A mid-range laptop or desktop (Core i5/Ryzen 5, 8GB-16GB RAM) is recommended to comfortably run virtual machines, IDEs, database servers, and network simulators.</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- FAQ Item 2 -->
-        <div class="faq-item">
-          <button class="faq-trigger">
-            What is the maximum unit capacity allowed per term?
-            <i data-lucide="chevron-down"></i>
-          </button>
-          <div class="faq-panel">
-            <p>The standard load is 15 to 18 units per semester. Graduating students or those with high GPAs may request
-              an <strong>Overload</strong> (up to 21 or 24 units) using the Overload Request form, subject to the
-              approval of the Program Chair. Underload (below 12 units) requires administrative justification,
-              especially if maintaining scholarships.</p>
+      <!-- Category 2: Academics, Curriculum, & Subject Load -->
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="color: var(--color-sky-dark); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--color-navy-light); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+          <i data-lucide="book-open" style="width: 18px; height: 18px;"></i>
+          Academics, Curriculum, & Subject Load
+        </h3>
+        <div class="faq-accordion">
+          <!-- FAQ 2.1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(255, 255, 255, 0.05); color: #94a3b8; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">GENERAL</span>
+                <span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">SINTA</span>
+                What happens if I fail or get an "Incomplete" (INC) in a prerequisite subject (e.g., CCNA 1 before CCNA 2, or OOP before Software Engineering)?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>You cannot enroll in the higher-level subject until the prerequisite is passed. For INC grades, you must process a Completion Form within one (1) year with your Course Specialist.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2.2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(255, 255, 255, 0.05); color: #94a3b8; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">GENERAL</span>
+                Can non-graduating students overload units?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>No, overloading is strictly for graduating students (max 6 units if graduating within 2 semesters, max 9 units if graduating in the current semester).</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2.3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                How do I enroll in back subjects or retake a failed major subject?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>You may add back subjects using the Application for Change of Enrollment (ACE) form during the adjustment period, provided there are no schedule conflicts with your main block and you haven't exceeded your allowed unit load.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2.4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                Are there industry certification exams integrated into our subjects (e.g., Cisco CCNA, AWS, Oracle)?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Selected networking and systems subjects align with industry standards. Announcements will be posted on the site if discount vouchers or official certification tracks are made available.</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- FAQ Item 3 -->
-        <div class="faq-item">
-          <button class="faq-trigger">
-            How are lab project files and quizzes submitted online?
-            <i data-lucide="chevron-down"></i>
-          </button>
-          <div class="faq-panel">
-            <p>All academic assessments, lab files (e.g. Cisco configs, Git repositories, code zip packages), and online
-              quizzes are handled via the <strong>PUP ODL LMS</strong>. Ensure you follow standard naming conventions
-              designated by your professors (e.g., <code>[Section]_[LastName]_Lab1.zip</code>). Never submit links with
-              restricted permissions.</p>
+      <!-- Category 3: Capstone & Internship (Practicum) -->
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="color: var(--color-sky-dark); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--color-navy-light); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+          <i data-lucide="briefcase" style="width: 18px; height: 18px;"></i>
+          Capstone & Internship (Practicum)
+        </h3>
+        <div class="faq-accordion">
+          <!-- FAQ 3.1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                When do we start preparing for Capstone Project 1 & 2?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Preparation usually starts in your 3rd year. Title defense and system proposal take place in Capstone 1, while full development, testing, and deployment occur in Capstone 2.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3.2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                Can we propose any topic or system for our Capstone?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Capstone topics must solve a real-world problem or business need (e.g., Web/Mobile Applications, IoT, Enterprise Systems) and must be reviewed and approved by the Capstone Committee and Program Chair.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3.3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                What are the requirements before taking the OJT / Internship?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>You must complete at least 75%–80% of your academic units, pass all prerequisite major subjects, and secure endorsement forms from the OUS Placement Office.</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- FAQ Item 4 -->
-        <div class="faq-item">
-          <button class="faq-trigger">
-            How do we verify tuition payment records?
-            <i data-lucide="chevron-down"></i>
-          </button>
-          <div class="faq-panel">
-            <p>Tuition payments are made through Landbank, GCash, or designated PUP cashier offices. After payment, scan
-              and submit the transaction receipt to the OUS Accounting Portal. Verification typically takes 3-5 business
-              days. Once verified, your status in the PUP SIS will update to "Enrolled".</p>
+      <!-- Category 4: Administrative & Appointments -->
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="color: var(--color-sky-dark); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--color-navy-light); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+          <i data-lucide="clipboard-list" style="width: 18px; height: 18px;"></i>
+          Administrative & Appointments
+        </h3>
+        <div class="faq-accordion">
+          <!-- FAQ 4.1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">PORTAL</span>
+                How do I schedule a document sign-off (ACE Forms, Overload requests, Completion Forms) with the Program Chair?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Go to our Student Services > Book Appointment page to see available consultation slots and complete the pre-requisite appointment form.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4.2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">SINTA</span>
+                How do I request a Certified True Copy (CTC) of my grades for scholarship or employment?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Submit your request through the PUP ODRS portal, pay the corresponding fee, and monitor your account for updates.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4.3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">SINTA</span>
+                What should I do if I have an uncleared balance in my SIS preventing my enrollment?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>File a ticket in PUP SINTA under Student Accounting Services > Verification of Outstanding Accounts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 5: BSIT Org & Career Opportunities -->
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="color: var(--color-sky-dark); font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--color-navy-light); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+          <i data-lucide="users" style="width: 18px; height: 18px;"></i>
+          BSIT Org & Career Opportunities
+        </h3>
+        <div class="faq-accordion">
+          <!-- FAQ 5.1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                How can I join the BSIT Student Organization or submit articles for the newsletter ("IT Bytes")?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Watch out for announcements on our Announcements & Newsletter tab or official Facebook page for membership calls, editorial staff applications, and article contributions.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5.2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" style="text-align: left;">
+              <span>
+                <span style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.2); font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; margin-right: 8px; display: inline-block; vertical-align: middle;">BSIT</span>
+                Where can I find announcements for Hackathons, Tech Webinars, and Free Workshops?
+              </span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="faq-panel">
+              <p>Check the IT News & Trends page on this site for upcoming local and national tech competitions, webinars, and skill-building opportunities.</p>
+            </div>
           </div>
         </div>
       </div>
