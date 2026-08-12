@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements & News | BSIT OUS Student Portal</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Latest advisories, academic notices, the official BSIT OUS newsletter 'The Source Code', and tech news/events.">
+  <meta name="keywords" content="PUP, OUS, BSIT, Announcements, The Source Code Newsletter, IT News, Hackathons">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo-container">
+        <div class="logo-symbol">IT</div>
+        <div class="logo-text">
+          <h1>BSIT OUS</h1>
+          <span>STUDENT PORTAL</span>
+        </div>
+      </div>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html" class="active">Announcements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faq.html">FAQ & Directory</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ANNOUNCEMENT TICKER -->
+  <div class="ticker-container">
+    <div class="ticker-label">
+      <i data-lucide="megaphone"
+        style="width:16px; height:16px; margin-right:5px; display:inline-block; vertical-align:middle;"></i>
+      Alerts
+    </div>
+    <div class="ticker-wrapper">
+      <div class="ticker-content">
+        <span class="ticker-item"><i data-lucide="alert-circle"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Opening of Academic Year
+          2026-2027 will start on Aug. 17, 2026.<a href="announcements.html">Read More</a></span>
+        <span class="ticker-item"><i data-lucide="calendar"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Adjustment period will be
+          held from Aug. 17 to Sept. 17, 2026.<a href="index.html#key-dates">View Calendar</a></span>
+        <span class="ticker-item"><i data-lucide="book-open"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> "The Source Code" Issue #8
+          Org Newsletter is now downloadable.<a href="announcements.html#newsletter">Get PDF</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h2>BSIT OUS Communications</h2>
+        <h1 style="font-size: 2.75rem;">Announcements & Student News</h1>
+        <p style="margin-bottom: 0;">Stay informed with administrative notices, organization publications, and tech events happening across the academic year.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" style="padding: 3rem 1.5rem; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 2.5rem;">
+    <!-- LEFT COLUMN: OFFICIAL ADVISORIES -->
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <div class="section-header" style="margin-bottom: 0;">
+        <h2>Official Advisories</h2>
+        <p>Verified administrative updates and program notices from the Chair's Office.</p>
+      </div>
+
+      <!-- SEARCH AND FILTER BAR -->
+      <div class="search-filter-bar">
+        <div class="search-box">
+          <input type="text" id="advisory-search" placeholder="Search advisories by keyword...">
+          <button type="button" aria-label="Search">
+            <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+          </button>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="urgent">Urgent</button>
+          <button class="filter-tab" data-filter="academic">Academic</button>
+          <button class="filter-tab" data-filter="org">Student Org</button>
+        </div>
+      </div>
+
+      <!-- ADVISORIES LIST -->
+      <div class="advisories-list">
+        <!-- Advisory 1 (Urgent) -->
+        <div class="advisory-card urgent" data-category="urgent">
+          <div class="advisory-meta">
+            <span class="advisory-tag">Urgent Update</span>
+            <span class="advisory-date"><i data-lucide="calendar" style="width:14px; height:14px;"></i> August 12, 2026</span>
+          </div>
+          <h3>Extension of Subject Add/Drop Period (ACE Form Submissions)</h3>
+          <p>Please be advised that the submission of ACE Forms for schedule adjustments has been extended. Ensure all prerequisites are verified by your year-level student representatives before submitting to the Program Chair's office. Forms submitted without rep verification signatures will not be processed.</p>
+          <div class="advisory-attachments">
+            <a href="https://www.pup.edu.ph/ous/forms" class="attachment-link" target="_blank" rel="noopener">
+              <i data-lucide="file-text" style="width:14px; height:14px; color:#ef4444;"></i>
+              PUP OUS Official Forms Page
+            </a>
+            <a href="services.html#booking" class="attachment-link">
+              <i data-lucide="calendar" style="width:14px; height:14px; color:var(--color-royal);"></i>
+              Book Advisor Sign-off
+            </a>
+          </div>
+        </div>
+
+        <!-- Advisory 2 (Academic) -->
+        <div class="advisory-card academic" data-category="academic">
+          <div class="advisory-meta">
+            <span class="advisory-tag">Academic Notice</span>
+            <span class="advisory-date"><i data-lucide="calendar" style="width:14px; height:14px;"></i> August 8, 2026</span>
+          </div>
+          <h3>Online LMS Credential Activation for First Year Students</h3>
+          <p>All newly enrolled first-year BSIT students must activate their Open Distance Learning (ODL) LMS credentials. Verification emails containing temporary login details have been sent to your registered personal email addresses. Contact the ICT support representative if you have not received your account by August 15.</p>
+          <div class="advisory-attachments">
+            <a href="https://odl.pup.edu.ph" class="attachment-link" target="_blank" rel="noopener">
+              <i data-lucide="external-link" style="width:14px; height:14px;"></i>
+              Go to LMS Portal (odl.pup.edu.ph)
+            </a>
+          </div>
+        </div>
+
+        <!-- Advisory 3 (Org) -->
+        <div class="advisory-card org" data-category="org">
+          <div class="advisory-meta">
+            <span class="advisory-tag">Student Org</span>
+            <span class="advisory-date"><i data-lucide="calendar" style="width:14px; height:14px;"></i> August 5, 2026</span>
+          </div>
+          <h3>BSIT Student Assembly: Tech Convergence 2026</h3>
+          <p>The PUP OUS BSIT Student Organization invites all year levels to join the annual General Assembly. We will discuss program policies, online learning tips, and introduce this year's student representatives. Zoom credentials and links will be shared in your respective year-level chats.</p>
+        </div>
+
+        <!-- Advisory 4 (Academic) -->
+        <div class="advisory-card academic" data-category="academic">
+          <div class="advisory-meta">
+            <span class="advisory-tag">Academic Notice</span>
+            <span class="advisory-date"><i data-lucide="calendar" style="width:14px; height:14px;"></i> July 30, 2026</span>
+          </div>
+          <h3>List of Available Bridging Courses for Non-IT Shifters</h3>
+          <p>For students who shifted or transitioned into the BSIT program from non-IT fields, the evaluation list of recommended bridging courses is now uploaded. Please check your SIS and coordinate with the department evaluator for approval of courses before registration.</p>
+          <div class="advisory-attachments">
+            <a href="faq.html" class="attachment-link">
+              <i data-lucide="help-circle" style="width:14px; height:14px;"></i>
+              Bridging FAQ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: SIDEBAR (NEWSLETTER & IT NEWS) -->
+    <div style="display: flex; flex-direction: column; gap: 3rem;">
+      <!-- ORG NEWSLETTER SECTION -->
+      <div id="newsletter" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h2>Org Newsletter</h2>
+          <p>Read "The Source Code" publication.</p>
+        </div>
+
+        <div class="newsletter-card">
+          <div class="newsletter-cover">
+            <span class="issue-label">Issue 8</span>
+            <h4>THE SOURCE CODE</h4>
+            <i data-lucide="terminal"></i>
+            <span style="font-size:0.7rem; color:var(--color-sky); margin-top:1rem; display:block;">Official BSIT Org Publication</span>
+          </div>
+          <div class="newsletter-info">
+            <div>
+              <h3>Navigating Distance Development</h3>
+              <p>Highlights from OUS alumni working as cloud architects, student hackathon project showcases, and essential programming workflows for self-paced learners.</p>
+            </div>
+            <div class="newsletter-actions">
+              <a href="#" class="btn btn-primary" onclick="alert('Starting PDF Download for Issue #8...'); return false;">
+                <i data-lucide="download" style="width:14px; height:14px;"></i> Download PDF
+              </a>
+              <a href="https://drive.google.com" class="btn btn-accent" target="_blank" rel="noopener">
+                <i data-lucide="eye" style="width:14px; height:14px;"></i> View Online
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT NEWS & TRENDS -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h2>IT News & Trends</h2>
+          <p>Hackathons, tech events, and industry updates.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+          <!-- News Card 1 -->
+          <div class="news-card">
+            <div class="news-img-placeholder" style="height:120px;">
+              <i data-lucide="code" style="width:32px; height:32px;"></i>
+            </div>
+            <div class="news-content" style="padding:1.25rem;">
+              <div class="news-content-top">
+                <span class="news-date">Sept 15, 2026</span>
+                <h3 style="font-size:1.05rem;">PUP Hackathon 2026: Code for the Community</h3>
+                <p style="font-size:0.8rem; line-height:1.4;">Annual university hackathon focusing on open-source solutions for public administration and community services.</p>
+              </div>
+              <a href="https://www.pup.edu.ph" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; text-transform:uppercase; margin-top:1rem; display:inline-flex; align-items:center; gap:0.25rem;">
+                Learn More <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- News Card 2 -->
+          <div class="news-card">
+            <div class="news-img-placeholder" style="height:120px; background:linear-gradient(45deg, var(--color-navy-dark) 0%, var(--color-sky-dark) 100%);">
+              <i data-lucide="cpu" style="width:32px; height:32px;"></i>
+            </div>
+            <div class="news-content" style="padding:1.25rem;">
+              <div class="news-content-top">
+                <span class="news-date">August 20, 2026</span>
+                <h3 style="font-size:1.05rem;">Webinar: Cloud Architecture & DevOps</h3>
+                <p style="font-size:0.8rem; line-height:1.4;">AWS Student Community hosts a basic training on containerization, CI/CD pipelines, and serverless deployment methods.</p>
+              </div>
+              <a href="https://www.pup.edu.ph" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; text-transform:uppercase; margin-top:1rem; display:inline-flex; align-items:center; gap:0.25rem;">
+                Register <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 style="color:#ffffff;">PUP OUS BSIT</h3>
+        <p>Providing high-quality and flexible information technology education to remote and self-paced learners. Preparing next-generation developers, analysts, and tech leaders.</p>
+        <p style="font-size: 0.8rem; color: var(--color-sky-dark); font-weight:600;">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>OPEN UNIVERSITY SYSTEM</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Portal Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements & News</a></li>
+          <li><a href="services.html">Student Services</a></li>
+          <li><a href="academics.html">Academics & Curriculum</a></li>
+          <li><a href="faq.html">FAQ & Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Program Chair Contact</h3>
+        <div class="footer-contact-item">
+          <i data-lucide="user"></i>
+          <span><strong>Prof. Lydinar D. Dastas</strong><br>BSIT OUS Program Chair</span>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <span>lddastas@pup.edu.ph</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Portal Links</h3>
+        <ul>
+          <li><a href="https://www.pup.edu.ph" target="_blank" rel="noopener">PUP Main Site</a></li>
+          <li><a href="https://www.pup.edu.ph/ous/" target="_blank" rel="noopener">PUP OUS Home</a></li>
+          <li><a href="https://sis2.pup.edu.ph" target="_blank" rel="noopener">PUP SIS Portal</a></li>
+          <li><a href="https://odl.pup.edu.ph" target="_blank" rel="noopener">PUP ODL LMS</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Polytechnic University of the Philippines - Open University System. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="https://www.pup.edu.ph/about/privacy.aspx" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.pup.edu.ph/terms/" target="_blank" rel="noopener">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>

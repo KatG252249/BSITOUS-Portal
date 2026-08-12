@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics & Learning Resources | BSIT OUS Student Portal</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="View the BSIT curriculum checklist per year level, download developer tools, and access Capstone & OJT guidelines.">
+  <meta name="keywords" content="PUP, OUS, BSIT Curriculum, Dev Toolkit, Cisco Packet Tracer, Capstone Template, OJT Internship Partners">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo-container">
+        <div class="logo-symbol">IT</div>
+        <div class="logo-text">
+          <h1>BSIT OUS</h1>
+          <span>STUDENT PORTAL</span>
+        </div>
+      </div>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="academics.html" class="active">Academics</a></li>
+          <li><a href="faq.html">FAQ & Directory</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ANNOUNCEMENT TICKER -->
+  <div class="ticker-container">
+    <div class="ticker-label">
+      <i data-lucide="megaphone"
+        style="width:16px; height:16px; margin-right:5px; display:inline-block; vertical-align:middle;"></i>
+      Alerts
+    </div>
+    <div class="ticker-wrapper">
+      <div class="ticker-content">
+        <span class="ticker-item"><i data-lucide="alert-circle"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Opening of Academic Year
+          2026-2027 will start on Aug. 17, 2026.<a href="announcements.html">Read More</a></span>
+        <span class="ticker-item"><i data-lucide="calendar"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Adjustment period will be
+          held from Aug. 17 to Sept. 17, 2026.<a href="index.html#key-dates">View Calendar</a></span>
+        <span class="ticker-item"><i data-lucide="book-open"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> "The Source Code" Issue #8
+          Org Newsletter is now downloadable.<a href="announcements.html#newsletter">Get PDF</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h2>BSIT OUS Program Resources</h2>
+        <h1 style="font-size: 2.75rem;">Academics & Curricular Tools</h1>
+        <p style="margin-bottom: 0;">Track your academic progress through the BSIT curriculum checklist, access developer utilities, and download official Capstone/OJT templates.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- CURRICULUM CHECKLIST SECTION -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Subject Offerings & Curriculum</h2>
+          <p>Toggle subjects you've completed to track your degree completion progress.</p>
+        </div>
+
+        <!-- PROGRESS METRIC BOARD -->
+        <div style="background-color: var(--color-navy); padding: 1.5rem; border-bottom: 3px solid var(--color-royal); color: var(--color-white); margin-bottom: 2rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap:wrap; gap:0.5rem;">
+            <span style="font-weight:700; text-transform:uppercase; font-size:0.85rem; letter-spacing:0.05em; color:var(--color-sky-dark);">Degree Progress Tracker</span>
+            <span id="checklist-progress-text" style="font-size:0.9rem; font-weight:600; color:var(--color-white);">0 of 20 Completed (0%)</span>
+          </div>
+          <div style="width: 100%; height: 8px; background-color: var(--color-navy-light);">
+            <div id="checklist-progress-bar" style="width: 0%; height: 100%; background-color: var(--color-sky-dark); transition: width var(--transition-normal);"></div>
+          </div>
+        </div>
+
+        <div class="tab-container">
+          <!-- TAB BUTTONS -->
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="year-1">1st Year Subjects</button>
+            <button class="tab-btn" data-tab="year-2">2nd Year Subjects</button>
+            <button class="tab-btn" data-tab="year-3">3rd Year Subjects</button>
+            <button class="tab-btn" data-tab="year-4">4th Year & OJT</button>
+          </div>
+
+          <!-- TAB CONTENT: 1ST YEAR -->
+          <div id="year-1" class="tab-content active">
+            <!-- 1st Sem -->
+            <div class="semester-block">
+              <h3>First Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Introduction to Computing as done"></td>
+                    <td class="subject-code"><strong>COMP 20013</strong></td>
+                    <td class="subject-title">Introduction to Computing</td>
+                    <td>3.0</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Computer Programming 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20023</strong></td>
+                    <td class="subject-title">Computer Programming 1</td>
+                    <td>3.0</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Discrete Mathematics as done"></td>
+                    <td class="subject-code"><strong>MATH 20043</strong></td>
+                    <td class="subject-title">Discrete Mathematics</td>
+                    <td>3.0</td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 2nd Sem -->
+            <div class="semester-block">
+              <h3>Second Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Computer Programming 2 as done"></td>
+                    <td class="subject-code"><strong>COMP 20033</strong></td>
+                    <td class="subject-title">Computer Programming 2</td>
+                    <td>3.0</td>
+                    <td>COMP 20023</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Data Structures and Algorithms as done"></td>
+                    <td class="subject-code"><strong>COMP 20043</strong></td>
+                    <td class="subject-title">Data Structures and Algorithms</td>
+                    <td>3.0</td>
+                    <td>COMP 20023</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: 2ND YEAR -->
+          <div id="year-2" class="tab-content">
+            <!-- 1st Sem -->
+            <div class="semester-block">
+              <h3>First Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Object-Oriented Programming as done"></td>
+                    <td class="subject-code"><strong>COMP 20053</strong></td>
+                    <td class="subject-title">Object-Oriented Programming</td>
+                    <td>3.0</td>
+                    <td>COMP 20033</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Database Management Systems 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20063</strong></td>
+                    <td class="subject-title">Database Management Systems 1</td>
+                    <td>3.0</td>
+                    <td>COMP 20043</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Networking 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20073</strong></td>
+                    <td class="subject-title">Networking 1</td>
+                    <td>3.0</td>
+                    <td>COMP 20013</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 2nd Sem -->
+            <div class="semester-block">
+              <h3>Second Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Web Systems and Technologies as done"></td>
+                    <td class="subject-code"><strong>COMP 20083</strong></td>
+                    <td class="subject-title">Web Systems and Technologies</td>
+                    <td>3.0</td>
+                    <td>COMP 20053, COMP 20063</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Systems Integration and Architecture as done"></td>
+                    <td class="subject-code"><strong>COMP 20093</strong></td>
+                    <td class="subject-title">Systems Integration and Architecture</td>
+                    <td>3.0</td>
+                    <td>COMP 20063</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: 3RD YEAR -->
+          <div id="year-3" class="tab-content">
+            <!-- 1st Sem -->
+            <div class="semester-block">
+              <h3>First Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Software Engineering 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20103</strong></td>
+                    <td class="subject-title">Software Engineering 1</td>
+                    <td>3.0</td>
+                    <td>COMP 20093</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Information Assurance and Security 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20113</strong></td>
+                    <td class="subject-title">Information Assurance and Security 1</td>
+                    <td>3.0</td>
+                    <td>COMP 20073</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Capstone Project 1 as done"></td>
+                    <td class="subject-code"><strong>COMP 20123</strong></td>
+                    <td class="subject-title">Capstone Project 1</td>
+                    <td>3.0</td>
+                    <td>COMP 20103</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 2nd Sem -->
+            <div class="semester-block">
+              <h3>Second Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Web Systems 2 as done"></td>
+                    <td class="subject-code"><strong>COMP 20133</strong></td>
+                    <td class="subject-title">Web Systems 2 (Enterprise)</td>
+                    <td>3.0</td>
+                    <td>COMP 20083</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Systems Administration and Maintenance as done"></td>
+                    <td class="subject-code"><strong>COMP 20143</strong></td>
+                    <td class="subject-title">Systems Administration & Maintenance</td>
+                    <td>3.0</td>
+                    <td>COMP 20073</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB CONTENT: 4TH YEAR -->
+          <div id="year-4" class="tab-content">
+            <!-- 1st Sem -->
+            <div class="semester-block">
+              <h3>First Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Capstone Project 2 as done"></td>
+                    <td class="subject-code"><strong>COMP 20153</strong></td>
+                    <td class="subject-title">Capstone Project 2 (Implementation)</td>
+                    <td>3.0</td>
+                    <td>COMP 20123</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Information Assurance and Security 2 as done"></td>
+                    <td class="subject-code"><strong>COMP 20163</strong></td>
+                    <td class="subject-title">Information Assurance and Security 2</td>
+                    <td>3.0</td>
+                    <td>COMP 20113</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- 2nd Sem -->
+            <div class="semester-block">
+              <h3>Second Semester</h3>
+              <table class="checklist-table">
+                <thead>
+                  <tr>
+                    <th style="width: 50px;">Done</th>
+                    <th style="width: 150px;">Course Code</th>
+                    <th>Course Title</th>
+                    <th style="width: 80px;">Units</th>
+                    <th>Pre-requisites</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" aria-label="Mark Internship / OJT as done"></td>
+                    <td class="subject-code"><strong>COMP 20176</strong></td>
+                    <td class="subject-title">Internship / On-the-Job Training (486 Hours)</td>
+                    <td>6.0</td>
+                    <td>All Prior Subjects Completed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPER & LAB TOOLKIT -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Dev & Lab Toolkit</h2>
+          <p>Essential utilities and configuration resources required for technical laboratory courses.</p>
+        </div>
+
+        <div class="grid toolkit-grid">
+          <!-- IDE -->
+          <div class="toolkit-card">
+            <div class="toolkit-card-header">
+              <div class="toolkit-card-icon"><i data-lucide="terminal"></i></div>
+              <span style="font-size:0.7rem; font-weight:700; background-color:var(--color-sky); color:var(--color-royal); padding:0.2rem 0.5rem;">IDE</span>
+            </div>
+            <h3>VS Code & Extensions</h3>
+            <p>Download Visual Studio Code and standard setup packs for C++, Java, and Web Technologies. Includes remote configuration setup guidelines.</p>
+            <a href="https://code.visualstudio.com" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+              Get VS Code <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+            </a>
+          </div>
+
+          <!-- Cisco Packet Tracer -->
+          <div class="toolkit-card">
+            <div class="toolkit-card-header">
+              <div class="toolkit-card-icon"><i data-lucide="network"></i></div>
+              <span style="font-size:0.7rem; font-weight:700; background-color:var(--color-sky); color:var(--color-royal); padding:0.2rem 0.5rem;">NETWORKING</span>
+            </div>
+            <h3>Cisco Packet Tracer Guides</h3>
+            <p>Download simulation software required for Networking 1 and Systems Administration labs, along with setup configuration guides.</p>
+            <a href="https://www.netacad.com" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+              Access Academy <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+            </a>
+          </div>
+
+          <!-- GitHub Starter -->
+          <div class="toolkit-card">
+            <div class="toolkit-card-header">
+              <div class="toolkit-card-icon"><i data-lucide="github"></i></div>
+              <span style="font-size:0.7rem; font-weight:700; background-color:var(--color-sky); color:var(--color-royal); padding:0.2rem 0.5rem;">VCS</span>
+            </div>
+            <h3>GitHub Starter Repositories</h3>
+            <p>Find pre-configured file hierarchies and ignore files for Web Systems, DBMS, and OOP projects. Start your programming labs cleanly.</p>
+            <a href="https://github.com" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+              Explore Templates <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+            </a>
+          </div>
+
+          <!-- Documentation -->
+          <div class="toolkit-card">
+            <div class="toolkit-card-header">
+              <div class="toolkit-card-icon"><i data-lucide="file-code-2"></i></div>
+              <span style="font-size:0.7rem; font-weight:700; background-color:var(--color-sky); color:var(--color-royal); padding:0.2rem 0.5rem;">DOCS</span>
+            </div>
+            <h3>Developer Reference Docs</h3>
+            <p>Access MDN Web Docs, Java SDK guides, and PostgreSQL resources directly. Essential bookmark list for distance software engineering.</p>
+            <a href="https://developer.mozilla.org" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; display:inline-flex; align-items:center; gap:0.25rem;">
+              MDN Docs <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPSTONE & OJT HUB -->
+    <section>
+      <div class="container" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem;">
+        
+        <!-- Capstone Templates -->
+        <div style="display:flex; flex-direction:column; gap:1.5rem;">
+          <div class="section-header" style="margin-bottom:0;">
+            <h2>Capstone Hub</h2>
+            <p>Templates and submission guidelines for Capstone 1 & 2.</p>
+          </div>
+          
+          <div class="download-list">
+            <!-- Template 1 -->
+            <div class="download-item">
+              <div class="download-info">
+                <div class="download-icon"><i data-lucide="file-text" style="color:var(--color-royal);"></i></div>
+                <div class="download-details">
+                  <h4>Capstone Proposal Format (Chapter 1-3)</h4>
+                  <span>DOCX Template • 1.2 MB</span>
+                </div>
+              </div>
+              <a href="#" class="download-btn" onclick="alert('Downloading Capstone Proposal template...'); return false;" aria-label="Download Capstone Proposal Template">
+                <i data-lucide="download" style="width:14px; height:14px;"></i>
+              </a>
+            </div>
+
+            <!-- Template 2 -->
+            <div class="download-item">
+              <div class="download-info">
+                <div class="download-icon"><i data-lucide="file-text" style="color:var(--color-royal);"></i></div>
+                <div class="download-details">
+                  <h4>Final Capstone Manuscript Guide (Chapter 1-5)</h4>
+                  <span>PDF Document • 950 KB</span>
+                </div>
+              </div>
+              <a href="#" class="download-btn" onclick="alert('Downloading Final Capstone Manuscript guide...'); return false;" aria-label="Download Final Capstone Guide">
+                <i data-lucide="download" style="width:14px; height:14px;"></i>
+              </a>
+            </div>
+
+            <!-- Template 3 -->
+            <div class="download-item">
+              <div class="download-info">
+                <div class="download-icon"><i data-lucide="file-spreadsheet" style="color:#10b981;"></i></div>
+                <div class="download-details">
+                  <h4>Capstone Progress Grading Rubric</h4>
+                  <span>XLSX Spreadsheet • 140 KB</span>
+                </div>
+              </div>
+              <a href="#" class="download-btn" onclick="alert('Downloading Grading Rubric sheet...'); return false;" aria-label="Download Capstone Rubric">
+                <i data-lucide="download" style="width:14px; height:14px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship Partners -->
+        <div style="display:flex; flex-direction:column; gap:1.5rem;">
+          <div class="section-header" style="margin-bottom:0;">
+            <h2>OJT Internship Partners</h2>
+            <p>Recommended active industry affiliates for BSIT students.</p>
+          </div>
+
+          <div class="grid partner-grid" style="gap:1rem;">
+            <!-- Partner 1 -->
+            <div class="partner-card">
+              <div class="partner-logo-placeholder">AC</div>
+              <h3>Accenture Philippines</h3>
+              <p>Specialization: Cloud Dev, Enterprise Systems</p>
+            </div>
+
+            <!-- Partner 2 -->
+            <div class="partner-card">
+              <div class="partner-logo-placeholder">PW</div>
+              <h3>Pointwest Technologies</h3>
+              <p>Specialization: Software QA, App Development</p>
+            </div>
+
+            <!-- Partner 3 -->
+            <div class="partner-card">
+              <div class="partner-logo-placeholder">TM</div>
+              <h3>Trend Micro PH</h3>
+              <p>Specialization: Cyber Security, Analytics</p>
+            </div>
+
+            <!-- Partner 4 -->
+            <div class="partner-card">
+              <div class="partner-logo-placeholder">PU</div>
+              <h3>PUP ICT Office</h3>
+              <p>Specialization: Network Administration</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 style="color:#ffffff;">PUP OUS BSIT</h3>
+        <p>Providing high-quality and flexible information technology education to remote and self-paced learners. Preparing next-generation developers, analysts, and tech leaders.</p>
+        <p style="font-size: 0.8rem; color: var(--color-sky-dark); font-weight:600;">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>OPEN UNIVERSITY SYSTEM</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Portal Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements & News</a></li>
+          <li><a href="services.html">Student Services</a></li>
+          <li><a href="academics.html">Academics & Curriculum</a></li>
+          <li><a href="faq.html">FAQ & Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Program Chair Contact</h3>
+        <div class="footer-contact-item">
+          <i data-lucide="user"></i>
+          <span><strong>Prof. Lydinar D. Dastas</strong><br>BSIT OUS Program Chair</span>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <span>lddastas@pup.edu.ph</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Portal Links</h3>
+        <ul>
+          <li><a href="https://www.pup.edu.ph" target="_blank" rel="noopener">PUP Main Site</a></li>
+          <li><a href="https://www.pup.edu.ph/ous/" target="_blank" rel="noopener">PUP OUS Home</a></li>
+          <li><a href="https://sis2.pup.edu.ph" target="_blank" rel="noopener">PUP SIS Portal</a></li>
+          <li><a href="https://odl.pup.edu.ph" target="_blank" rel="noopener">PUP ODL LMS</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Polytechnic University of the Philippines - Open University System. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="https://www.pup.edu.ph/about/privacy.aspx" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.pup.edu.ph/terms/" target="_blank" rel="noopener">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>

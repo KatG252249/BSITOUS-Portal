@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | BSIT OUS Student Portal</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Official student portal for the BSIT Program, Open University System at Polytechnic University of the Philippines. Access subject offerings, calendar, downloads, and directory.">
+  <meta name="keywords"
+    content="PUP, OUS, BSIT, Student Portal, Open University System, Polytechnic University of the Philippines">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo-container">
+        <div class="logo-symbol">IT</div>
+        <div class="logo-text">
+          <h1>BSIT OUS</h1>
+          <span>STUDENT PORTAL</span>
+        </div>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faq.html">FAQ & Directory</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ANNOUNCEMENT TICKER -->
+  <div class="ticker-container">
+    <div class="ticker-label">
+      <i data-lucide="megaphone"
+        style="width:16px; height:16px; margin-right:5px; display:inline-block; vertical-align:middle;"></i>
+      Alerts
+    </div>
+    <div class="ticker-wrapper">
+      <div class="ticker-content">
+        <span class="ticker-item"><i data-lucide="alert-circle"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Opening of Academic Year
+          2026-2027 will start on Aug. 17, 2026.<a href="announcements.html">Read More</a></span>
+        <span class="ticker-item"><i data-lucide="calendar"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Adjustment period will be
+          held from Aug. 17 to Sept. 17, 2026.<a href="index.html#key-dates">View Calendar</a></span>
+        <span class="ticker-item"><i data-lucide="book-open"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> "The Source Code" Issue #8
+          Org Newsletter is now downloadable.<a href="announcements.html#newsletter">Get PDF</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h2>PUP Open University System</h2>
+        <h1>BSIT OUS Student Portal</h1>
+        <p>Welcome to the official digital hub for the Bachelor of Science in Information Technology (BSIT) program -
+          PUP Open University System.
+          Empowering distance learners with streamlined academic services, modern development toolkits, and timely
+          official communications.</p>
+        <div class="hero-actions">
+          <a href="academics.html" class="btn btn-primary">
+            <i data-lucide="clipboard-list" style="width:18px; height:18px;"></i>
+            Curriculum Checklist
+          </a>
+          <a href="services.html" class="btn btn-secondary">
+            <i data-lucide="calendar" style="width:18px; height:18px;"></i>
+            Book Appointment
+          </a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="hero-badge-header">
+          <i data-lucide="clock" style="width:16px; height:16px;"></i>
+          Upcoming Academic Event
+        </div>
+        <div class="hero-badge-body">
+          <strong>Midterm Examination</strong>
+          <span>September 28, 2026</span>
+          <p style="font-size:0.8rem; margin-top:0.5rem; opacity:0.8;">Ensure clearance of all academic and financial
+            requirements before this date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- QUICK LINKS SECTION -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quick Access Dashboard</h2>
+          <p>Instantly navigate to critical BSIT student resources and administrative tools.</p>
+        </div>
+
+        <div class="grid quick-links-grid">
+          <!-- Calendar & Schedules -->
+          <a href="index.html#key-dates" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="calendar-days"></i></div>
+              <h3>Schedules & Calendar</h3>
+              <p>Key academic dates, enrollment timelines, exam schedules, and term clearances.</p>
+            </div>
+            <span class="link-card-arrow">View Dates <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+
+          <!-- Subject Offerings -->
+          <a href="academics.html" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="book-marked"></i></div>
+              <h3>Subject Offerings</h3>
+              <p>View lists of course codes, pre-requisites, and full curriculum requirements by year level.</p>
+            </div>
+            <span class="link-card-arrow">View Curriculum <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+
+          <!-- Announcements -->
+          <a href="announcements.html" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="bell"></i></div>
+              <h3>Announcements & News</h3>
+              <p>Official advisories, academic notices, and the BSIT organization newsletter.</p>
+            </div>
+            <span class="link-card-arrow">Read News <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+
+          <!-- Student Forms -->
+          <a href="services.html#forms" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="file-text"></i></div>
+              <h3>Student Forms & PDFs</h3>
+              <p>Download ACE forms, overloading requests, bridging evaluations, and OJT logs.</p>
+            </div>
+            <span class="link-card-arrow">Download Forms <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+
+          <!-- Book Appointment -->
+          <a href="services.html#booking" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="check-square"></i></div>
+              <h3>Book Appointment</h3>
+              <p>Schedule administrative sign-offs or academic consultations with the Program Chair.</p>
+            </div>
+            <span class="link-card-arrow">Book Calendar <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+
+          <!-- FAQ & Student Guide -->
+          <a href="faq.html" class="link-card">
+            <div class="link-card-top">
+              <div class="link-card-icon"><i data-lucide="help-circle"></i></div>
+              <h3>FAQ & Student Guide</h3>
+              <p>Clarifications on bridging courses, unit capacities, grade submissions, and fees.</p>
+            </div>
+            <span class="link-card-arrow">Read FAQ <i data-lucide="arrow-right"
+                style="width:14px; height:14px;"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY DATES TIMELINE -->
+    <section id="key-dates">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Term Milestones</h2>
+          <p>Keep track of important deadlines for the current academic semester.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item active">
+            <div class="timeline-badge">
+              <i data-lucide="user-check"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">August 1 - 25, 2026</span>
+              <h3>Enrollment and Subject Registrations</h3>
+              <p>Online registration via SIS. Late registration and manual adjustment of schedules (ACE forms) can be
+                submitted for review. Direct coordination with student representatives for bridging queries is highly
+                encouraged.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <i data-lucide="pen-tool"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">September 28 - 30, 2026</span>
+              <h3>Midterm Examination Week</h3>
+              <p>Scheduled online testing and submission of major project milestones. Make sure to check the specific
+                schedules assigned by professors for synchronously proctored assessments.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <i data-lucide="file-check-2"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">November 14, 2026</span>
+              <h3>Grade Finalization & Project Defenses</h3>
+              <p>Final project evaluations, Capstone mock defenses, and grade reporting by the faculty. Ensure all
+                outstanding compliance records and lab submissions are uploaded to the LMS.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-badge">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">November 28, 2026</span>
+              <h3>Clearance & Graduation Application</h3>
+              <p>Submission of completion grades and administrative clearance sign-offs with the program chair for
+                graduating students. Start of preparation for next semester curriculum advisories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 style="color:#ffffff;">PUPOUS - BSIT</h3>
+        <p>Providing high-quality and flexible information technology education to remote and self-paced learners.
+          Preparing next-generation developers, analysts, and tech leaders.</p>
+        <p style="font-size: 0.8rem; color: var(--color-sky-dark); font-weight:600;">POLYTECHNIC UNIVERSITY OF THE
+          PHILIPPINES<br>OPEN UNIVERSITY SYSTEM</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Portal Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements & News</a></li>
+          <li><a href="services.html">Student Services</a></li>
+          <li><a href="academics.html">Academics & Curriculum</a></li>
+          <li><a href="faq.html">FAQ & Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Program Chair Contact</h3>
+        <div class="footer-contact-item">
+          <i data-lucide="user"></i>
+          <span><strong>Prof. Lydinar D. Dastas</strong><br>BSIT OUS Program Chair</span>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <span>lddastas@pup.edu.ph</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Portal Links</h3>
+        <ul>
+          <li><a href="https://www.pup.edu.ph" target="_blank" rel="noopener">PUP Main Site</a></li>
+          <li><a href="https://www.pup.edu.ph/ous/" target="_blank" rel="noopener">PUP OUS Home</a></li>
+          <li><a href="https://sis2.pup.edu.ph" target="_blank" rel="noopener">PUP SIS Portal</a></li>
+          <li><a href="https://emabini.pup.edu.ph/" target="_blank" rel="noopener">PUP eMabini Portal</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Polytechnic University of the Philippines - Open University System. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="https://www.pup.edu.ph/about/privacy.aspx" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.pup.edu.ph/terms/" target="_blank" rel="noopener">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

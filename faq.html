@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Directory | BSIT OUS Student Portal</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Get answers to frequently asked questions on bridging, unit capacity, fees, and contact details of faculty and student representatives.">
+  <meta name="keywords"
+    content="PUP, OUS, BSIT FAQ, Student Directory, Lydinar Dastas, Anthony Lacerna, Year-level Student Representatives">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo-container">
+        <div class="logo-symbol">IT</div>
+        <div class="logo-text">
+          <h1>BSIT OUS</h1>
+          <span>STUDENT PORTAL</span>
+        </div>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faq.html" class="active">FAQ & Directory</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ANNOUNCEMENT TICKER -->
+  <div class="ticker-container">
+    <div class="ticker-label">
+      <i data-lucide="megaphone"
+        style="width:16px; height:16px; margin-right:5px; display:inline-block; vertical-align:middle;"></i>
+      Alerts
+    </div>
+    <div class="ticker-wrapper">
+      <div class="ticker-content">
+        <span class="ticker-item"><i data-lucide="alert-circle"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Opening of Academic Year
+          2026-2027 will start on Aug. 17, 2026.<a href="announcements.html">Read More</a></span>
+        <span class="ticker-item"><i data-lucide="calendar"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> Adjustment period will be
+          held from Aug. 17 to Sept. 17, 2026.<a href="index.html#key-dates">View Calendar</a></span>
+        <span class="ticker-item"><i data-lucide="book-open"
+            style="width:14px; height:14px; margin-right:5px; vertical-align:middle;"></i> "The Source Code" Issue #8
+          Org Newsletter is now downloadable.<a href="announcements.html#newsletter">Get PDF</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h2>BSIT OUS Helpdesk</h2>
+        <h1 style="font-size: 2.75rem;">FAQ & Contact Directory</h1>
+        <p style="margin-bottom: 0;">Find immediate answers to program procedures, or get in touch directly with BSIT
+          OUS faculty advisors and student representatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" style="padding: 3rem 1.5rem; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem;">
+    <!-- LEFT COLUMN: FAQ ACCORDION -->
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      <div class="section-header" style="margin-bottom: 0;">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common administrative and curricular queries for BSIT students.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item active">
+          <button class="faq-trigger">
+            How do bridging courses work for non-IT shifters/graduates?
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>Students entering the BSIT program from unrelated fields (e.g. non-tech courses or associate degrees)
+              must take Bridging Courses (like basic computing and intro programming) before registering for core
+              subjects. Coordinates with the Department Evaluator to evaluate your transcripts and get the official list
+              of required bridging units. Submit the evaluation sheet during enrollment.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            What is the maximum unit capacity allowed per term?
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>The standard load is 15 to 18 units per semester. Graduating students or those with high GPAs may request
+              an <strong>Overload</strong> (up to 21 or 24 units) using the Overload Request form, subject to the
+              approval of the Program Chair. Underload (below 12 units) requires administrative justification,
+              especially if maintaining scholarships.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            How are lab project files and quizzes submitted online?
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>All academic assessments, lab files (e.g. Cisco configs, Git repositories, code zip packages), and online
+              quizzes are handled via the <strong>PUP ODL LMS</strong>. Ensure you follow standard naming conventions
+              designated by your professors (e.g., <code>[Section]_[LastName]_Lab1.zip</code>). Never submit links with
+              restricted permissions.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            How do we verify tuition payment records?
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>Tuition payments are made through Landbank, GCash, or designated PUP cashier offices. After payment, scan
+              and submit the transaction receipt to the OUS Accounting Portal. Verification typically takes 3-5 business
+              days. Once verified, your status in the PUP SIS will update to "Enrolled".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: DIRECTORY -->
+    <div style="display: flex; flex-direction: column; gap: 3rem;">
+      <!-- FACULTY DIRECTORY -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div class="section-header" style="margin-bottom: 0;">
+          <h2>Faculty Directory</h2>
+          <p>Academic leadership and evaluators.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <!-- Faculty Card 1 -->
+          <div class="directory-card">
+            <div class="directory-avatar">AL</div>
+            <div class="directory-info" style="flex:1;">
+              <h3>Dr. Anthony Lacerna</h3>
+              <span class="title">Executive Director, PUP Open University System</span>
+              <span class="contact-email">alacerna@pup.edu.ph</span>
+            </div>
+            <button class="copy-email-btn btn btn-accent" data-email="alacerna@pup.edu.ph"
+              style="padding: 0.4rem 0.8rem; font-size:0.75rem;" aria-label="Copy email for Dr. Anthony Lacerna">
+              <i data-lucide="copy" style="width: 14px; height: 14px; vertical-align:middle;"></i> Copy
+            </button>
+          </div>
+
+          <!-- Faculty Card 2 -->
+          <div class="directory-card">
+            <div class="directory-avatar">LD</div>
+            <div class="directory-info" style="flex:1;">
+              <h3>Prof. Lydinar D. Dastas</h3>
+              <span class="title">BSIT OUS Program Chair</span>
+              <span class="contact-email">lddastas@pup.edu.ph</span>
+            </div>
+            <button class="copy-email-btn btn btn-accent" data-email="lddastas@pup.edu.ph"
+              style="padding: 0.4rem 0.8rem; font-size:0.75rem;" aria-label="Copy email for Prof. Lydinar D. Dastas">
+              <i data-lucide="copy" style="width: 14px; height: 14px; vertical-align:middle;"></i> Copy
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- STUDENT REPRESENTATIVES -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="section-header" style="margin-bottom: 0;">
+        <h2>Student Representatives</h2>
+        <p>Liaisons for year levels and OUS concerns.</p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <!-- Rep Card 1 -->
+        <div class="directory-card">
+          <div class="directory-avatar" style="background-color:var(--color-royal);">Y4</div>
+          <div class="directory-info" style="flex:1;">
+            <h3>Alex M. Rivera</h3>
+            <span class="title">4th Year Student Representative</span>
+            <span class="contact-email">alexrivera.ous@pup.edu.ph</span>
+          </div>
+          <button class="copy-email-btn btn btn-accent" data-email="alexrivera.ous@pup.edu.ph"
+            style="padding: 0.4rem 0.8rem; font-size:0.75rem;" aria-label="Copy email for Alex Rivera">
+            <i data-lucide="copy" style="width: 14px; height: 14px; vertical-align:middle;"></i> Copy
+          </button>
+        </div>
+
+        <!-- Rep Card 2 -->
+        <div class="directory-card">
+          <div class="directory-avatar" style="background-color:var(--color-royal);">Y3</div>
+          <div class="directory-info" style="flex:1;">
+            <h3>Sofia B. Castro</h3>
+            <span class="title">3rd Year Student Representative</span>
+            <span class="contact-email">sofiacastro.ous@pup.edu.ph</span>
+          </div>
+          <button class="copy-email-btn btn btn-accent" data-email="sofiacastro.ous@pup.edu.ph"
+            style="padding: 0.4rem 0.8rem; font-size:0.75rem;" aria-label="Copy email for Sofia Castro">
+            <i data-lucide="copy" style="width: 14px; height: 14px; vertical-align:middle;"></i> Copy
+          </button>
+        </div>
+
+        <!-- Rep Card 3 -->
+        <div class="directory-card">
+          <div class="directory-avatar" style="background-color:var(--color-royal);">Y2</div>
+          <div class="directory-info" style="flex:1;">
+            <h3>Joshua T. Santos</h3>
+            <span class="title">2nd Year Student Representative</span>
+            <span class="contact-email">joshuasantos.ous@pup.edu.ph</span>
+          </div>
+          <button class="copy-email-btn btn btn-accent" data-email="joshuasantos.ous@pup.edu.ph"
+            style="padding: 0.4rem 0.8rem; font-size:0.75rem;" aria-label="Copy email for Joshua Santos">
+            <i data-lucide="copy" style="width: 14px; height: 14px; vertical-align:middle;"></i> Copy
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 style="color:#ffffff;">PUP OUS BSIT</h3>
+        <p>Providing high-quality and flexible information technology education to remote and self-paced learners.
+          Preparing next-generation developers, analysts, and tech leaders.</p>
+        <p style="font-size: 0.8rem; color: var(--color-sky-dark); font-weight:600;">POLYTECHNIC UNIVERSITY OF THE
+          PHILIPPINES<br>OPEN UNIVERSITY SYSTEM</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Portal Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="announcements.html">Announcements & News</a></li>
+          <li><a href="services.html">Student Services</a></li>
+          <li><a href="academics.html">Academics & Curriculum</a></li>
+          <li><a href="faq.html">FAQ & Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Program Chair Contact</h3>
+        <div class="footer-contact-item">
+          <i data-lucide="user"></i>
+          <span><strong>Prof. Lydinar D. Dastas</strong><br>BSIT OUS Program Chair</span>
+        </div>
+        <div class="footer-contact-item">
+          <i data-lucide="mail"></i>
+          <span>lddastas@pup.edu.ph</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Portal Links</h3>
+        <ul>
+          <li><a href="https://www.pup.edu.ph" target="_blank" rel="noopener">PUP Main Site</a></li>
+          <li><a href="https://www.pup.edu.ph/ous/" target="_blank" rel="noopener">PUP OUS Home</a></li>
+          <li><a href="https://sis2.pup.edu.ph" target="_blank" rel="noopener">PUP SIS Portal</a></li>
+          <li><a href="https://odl.pup.edu.ph" target="_blank" rel="noopener">PUP ODL LMS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Polytechnic University of the Philippines - Open University System. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="https://www.pup.edu.ph/about/privacy.aspx" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.pup.edu.ph/terms/" target="_blank" rel="noopener">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
