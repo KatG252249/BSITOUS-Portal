@@ -38,96 +38,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     "announcements": [
       {
-        "id": "advisory-1",
-        "category": "urgent",
-        "tag": "Urgent Update",
-        "date": "August 12, 2026",
-        "title": "Extension of Subject Add/Drop Period (ACE Form Submissions)",
-        "content": "Please be advised that the submission of ACE Forms for schedule adjustments has been extended. Ensure all prerequisites are verified by your year-level student representatives before submitting to the Program Chair's office. Forms submitted without rep verification signatures will not be processed.",
-        "attachments": [
-          {
-            "text": "PUP OUS Official Forms Page",
-            "url": "https://www.pup.edu.ph/ous/forms",
-            "icon": "file-text",
-            "isExternal": true
-          },
-          {
-            "text": "Book Advisor Sign-off",
-            "url": "services.html#booking",
-            "icon": "calendar",
-            "isExternal": false
-          }
-        ]
-      },
-      {
-        "id": "advisory-2",
+        "id": "advisory-id-processing",
         "category": "academic",
-        "tag": "Academic Notice",
-        "date": "August 8, 2026",
-        "title": "Online LMS Credential Activation for First Year Students",
-        "content": "All newly enrolled first-year BSIT students must activate their Open Distance Learning (ODL) LMS credentials. Verification emails containing temporary login details have been sent to your registered personal email addresses. Contact the ICT support representative if you have not received your account by August 15.",
+        "tag": "Service Advisory",
+        "date": "August 14, 2026",
+        "title": "Guidelines for Rescheduled OUS Freshmen ID Processing (AY 2026-2027)",
+        "content": "<p>Please be advised of the guidelines and options regarding the rescheduled ID processing for Open University System freshmen starting <strong>August 25, 2026 onwards</strong>:</p><ul><li><strong>Walk-in ID Processing:</strong> Process your ID only on the assigned date indicated on your rescheduled stub. Present your Route and Approval Sheet (RAS Form), Certificate of Registration (COR), and stub to staff/volunteers upon entry.</li><li><strong>Online ID Processing:</strong> Students who wish to process their ID online may send the required documents to <a href=\"mailto:studentsservices@pup.edu.ph\">studentsservices@pup.edu.ph</a>. Attach a scanned copy of your COR, a 2x2 ID picture (white background), and your e-signature. (For representative claims, submit an authorization letter).</li><li><strong>Claiming & Pick-up:</strong> You will be notified of your assigned ID printing or pick-up schedule. Present original RAS and COR upon claiming.</li><li><strong>Location & Schedule:</strong> ID picture-taking, printing, and claiming will take place at Room 204, Charlie Del Rosario Bldg., PUP Sta. Mesa from 8:00 AM to 8:00 PM, Tuesdays to Fridays.</li></ul>",
         "attachments": [
           {
-            "text": "Go to LMS Portal (odl.pup.edu.ph)",
-            "url": "https://odl.pup.edu.ph",
-            "icon": "external-link",
+            "text": "Email Student Services",
+            "url": "mailto:studentsservices@pup.edu.ph",
+            "icon": "mail",
             "isExternal": true
-          }
-        ]
-      },
-      {
-        "id": "advisory-3",
-        "category": "org",
-        "tag": "Student Org",
-        "date": "August 5, 2026",
-        "title": "BSIT Student Assembly: Tech Convergence 2026",
-        "content": "The PUP OUS BSIT Student Organization invites all year levels to join the annual General Assembly. We will discuss program policies, online learning tips, and introduce this year's student representatives. Zoom credentials and links will be shared in your respective year-level chats.",
-        "attachments": []
-      },
-      {
-        "id": "advisory-4",
-        "category": "academic",
-        "tag": "Academic Notice",
-        "date": "July 30, 2026",
-        "title": "List of Available Bridging Courses for Non-IT Shifters",
-        "content": "For students who shifted or transitioned into the BSIT program from non-IT fields, the evaluation list of recommended bridging courses is now uploaded. Please check your SIS and coordinate with the department evaluator for approval of courses before registration.",
-        "attachments": [
-          {
-            "text": "Bridging FAQ",
-            "url": "faq.html",
-            "icon": "help-circle",
-            "isExternal": false
           }
         ]
       }
     ],
     "milestones": [
       {
-        "date": "August 1 - 25, 2026",
-        "title": "Enrollment and Subject Registrations",
-        "content": "Online registration via SIS. Late registration and manual adjustment of schedules (ACE forms) can be submitted for review. Direct coordination with student representatives for bridging queries is highly encouraged.",
-        "icon": "user-check",
+        "date": "August 17, 2026",
+        "title": "Start of Academic Year 2026-2027",
+        "content": "Official start of classes and academic activities for the first semester of AY 2026-2027.",
+        "icon": "book-open",
         "active": true
       },
       {
-        "date": "September 28 - 30, 2026",
-        "title": "Midterm Examination Week",
-        "content": "Scheduled online testing and submission of major project milestones. Make sure to check the specific schedules assigned by professors for synchronously proctored assessments.",
-        "icon": "pen-tool",
-        "active": false
-      },
-      {
-        "date": "November 14, 2026",
-        "title": "Grade Finalization & Project Defenses",
-        "content": "Final project evaluations, Capstone mock defenses, and grade reporting by the faculty. Ensure all outstanding compliance records and lab submissions are uploaded to the LMS.",
-        "icon": "file-check-2",
-        "active": false
-      },
-      {
-        "date": "November 28, 2026",
-        "title": "Clearance & Graduation Application",
-        "content": "Submission of completion grades and administrative clearance sign-offs with the program chair for graduating students. Start of preparation for next semester curriculum advisories.",
-        "icon": "award",
+        "date": "August 17 - September 17, 2026",
+        "title": "Schedule Adjustment Period",
+        "content": "Submission of ACE Forms for schedule adjustments, course additions, and program section changes.",
+        "icon": "calendar",
         "active": false
       }
     ]
@@ -208,7 +147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <span class="advisory-date"><i data-lucide="calendar" style="width:14px; height:14px;"></i> ${adv.date}</span>
           </div>
           <h3>${adv.title}</h3>
-          <p>${adv.content}</p>
+          <div class="advisory-body-text">${adv.content}</div>
           ${attachmentsHTML}
         </div>
       `;
@@ -260,54 +199,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // 3. Interactive Subject Checklist (Curriculum)
-  const subjectCheckboxes = document.querySelectorAll('.checklist-table input[type="checkbox"]');
-  
-  if (subjectCheckboxes.length > 0) {
-    subjectCheckboxes.forEach((checkbox, idx) => {
-      const isChecked = localStorage.getItem(`bsit_subject_${idx}`) === 'true';
-      checkbox.checked = isChecked;
-      
-      const row = checkbox.closest('tr');
-      if (row) {
-        if (isChecked) {
-          row.classList.add('completed');
-        } else {
-          row.classList.remove('completed');
-        }
-      }
-      
-      checkbox.addEventListener('change', (e) => {
-        const checked = e.target.checked;
-        localStorage.setItem(`bsit_subject_${idx}`, checked);
-        
-        if (row) {
-          if (checked) {
-            row.classList.add('completed');
-          } else {
-            row.classList.remove('completed');
-          }
-        }
-        updateChecklistProgress();
-      });
-    });
-    updateChecklistProgress();
-  }
-
-  function updateChecklistProgress() {
-    const totalSubjects = subjectCheckboxes.length;
-    const completedSubjects = Array.from(subjectCheckboxes).filter(cb => cb.checked).length;
-    const progressText = document.getElementById('checklist-progress-text');
-    const progressBar = document.getElementById('checklist-progress-bar');
-    
-    if (progressText && totalSubjects > 0) {
-      const percentage = Math.round((completedSubjects / totalSubjects) * 100);
-      progressText.textContent = `${completedSubjects} of ${totalSubjects} Completed (${percentage}%)`;
-      if (progressBar) {
-        progressBar.style.width = `${percentage}%`;
-      }
-    }
-  }
 
   // 4. Accordion Toggle (For FAQ page)
   const faqItems = document.querySelectorAll('.faq-item');
@@ -324,6 +215,21 @@ document.addEventListener('DOMContentLoaded', async () => {
           if (!isActive) {
             item.classList.add('active');
           }
+        });
+      }
+    });
+  }
+
+  // 4b. Collapsible Categories Toggle (For FAQ page)
+  const faqCategories = document.querySelectorAll('.faq-category');
+  
+  if (faqCategories.length > 0) {
+    faqCategories.forEach(category => {
+      const trigger = category.querySelector('.category-trigger');
+      
+      if (trigger) {
+        trigger.addEventListener('click', () => {
+          category.classList.toggle('active');
         });
       }
     });
