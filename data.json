@@ -13,7 +13,7 @@
       "icon": "calendar"
     },
     {
-      "text": "\"The Source Code\" Issue #8 Org Newsletter is now downloadable.",
+      "text": "\"The Source Code\" Issue #1 Org Newsletter is now downloadable.",
       "link": "announcements.html#newsletter",
       "linkLabel": "Get PDF",
       "icon": "book-open"
@@ -37,6 +37,22 @@
           "text": "Email Student Services",
           "url": "mailto:studentsservices@pup.edu.ph",
           "icon": "mail",
+          "isExternal": true
+        }
+      ]
+    },
+    {
+      "id": "advisory-newsletter-staff",
+      "category": "org",
+      "tag": "Student Org",
+      "date": "August 18, 2026",
+      "title": "Call for Applications: 'The Source Code' Publication Staff (AY 2026-2027)",
+      "content": "<p>The official student publication of the BSIT OUS, <strong>The Source Code</strong>, is officially opening its application period for new staff members for the Academic Year 2026-2027. We are looking for passionate writers, graphics designers, copyeditors, and layout artists to join our team.</p><p>Interested students may submit their portfolio and fill out the application form by clicking the link below. Deadline for submission is <strong>September 10, 2026</strong>.</p>",
+      "attachments": [
+        {
+          "text": "Apply Now (Google Form)",
+          "url": "https://forms.google.com",
+          "icon": "file-text",
           "isExternal": true
         }
       ]

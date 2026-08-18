@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         "icon": "calendar"
       },
       {
-        "text": "\"The Source Code\" Issue #8 Org Newsletter is now downloadable.",
+        "text": "\"The Source Code\" Issue #1 Org Newsletter is now downloadable.",
         "link": "announcements.html#newsletter",
         "linkLabel": "Get PDF",
         "icon": "book-open"
@@ -49,6 +49,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             "text": "Email Student Services",
             "url": "mailto:studentsservices@pup.edu.ph",
             "icon": "mail",
+            "isExternal": true
+          }
+        ]
+      },
+      {
+        "id": "advisory-newsletter-staff",
+        "category": "org",
+        "tag": "Student Org",
+        "date": "August 18, 2026",
+        "title": "Call for Applications: 'The Source Code' Publication Staff (AY 2026-2027)",
+        "content": "<p>The official student publication of the BSIT OUS, <strong>The Source Code</strong>, is officially opening its application period for new staff members for the Academic Year 2026-2027. We are looking for passionate writers, graphics designers, copyeditors, and layout artists to join our team.</p><p>Interested students may submit their portfolio and fill out the application form by clicking the link below. Deadline for submission is <strong>September XX, 2026</strong>.</p>",
+        "attachments": [
+          {
+            "text": "Apply Now (Google Form)",
+            "url": "https://forms.google.com",
+            "icon": "file-text",
             "isExternal": true
           }
         ]
@@ -164,11 +180,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 1. Mobile Navigation Toggle
   const navToggle = document.querySelector('.mobile-nav-toggle');
   const navLinks = document.querySelector('.nav-links');
-  
+
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
-      
+
       const icon = navToggle.querySelector('i');
       if (icon && typeof lucide !== 'undefined') {
         const isOpened = navLinks.classList.contains('active');
@@ -186,10 +202,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     tabButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         const targetTab = btn.getAttribute('data-tab');
-        
+
         tabButtons.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
-        
+
         btn.classList.add('active');
         const targetEl = document.getElementById(targetTab);
         if (targetEl) {
@@ -202,16 +218,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 4. Accordion Toggle (For FAQ page)
   const faqItems = document.querySelectorAll('.faq-item');
-  
+
   if (faqItems.length > 0) {
     faqItems.forEach(item => {
       const trigger = item.querySelector('.faq-trigger');
-      
+
       if (trigger) {
         trigger.addEventListener('click', () => {
           const isActive = item.classList.contains('active');
           faqItems.forEach(i => i.classList.remove('active'));
-          
+
           if (!isActive) {
             item.classList.add('active');
           }
@@ -222,11 +238,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 4b. Collapsible Categories Toggle (For FAQ page)
   const faqCategories = document.querySelectorAll('.faq-category');
-  
+
   if (faqCategories.length > 0) {
     faqCategories.forEach(category => {
       const trigger = category.querySelector('.category-trigger');
-      
+
       if (trigger) {
         trigger.addEventListener('click', () => {
           category.classList.toggle('active');
@@ -249,7 +265,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const title = card.querySelector('h3').textContent.toLowerCase();
         const text = card.querySelector('p').textContent.toLowerCase();
         const category = card.getAttribute('data-category');
-        
+
         const matchesCategory = currentCategory === 'all' || category === currentCategory;
         const matchesSearch = title.includes(searchQuery) || text.includes(searchQuery);
 
@@ -301,5 +317,53 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
       });
     });
+  }
+
+  // 7. Dynamic IT News Fetching (Fetches 2 technology/programming articles weekly/live)
+  const itNewsContainer = document.getElementById('it-news-container');
+  if (itNewsContainer) {
+    try {
+      const response = await fetch('https://dev.to/api/articles?tag=technology&per_page=2');
+      if (response.ok) {
+        const articles = await response.json();
+        if (articles && articles.length >= 2) {
+          itNewsContainer.innerHTML = articles.slice(0, 2).map(article => {
+            const date = new Date(article.published_at).toLocaleDateString('en-US', {
+              month: 'short',
+              day: 'numeric',
+              year: 'numeric'
+            });
+            const imageStyle = article.cover_image
+              ? `background-image: url('${article.cover_image}'); background-size: cover; background-position: center; height:120px;`
+              : `height:120px; background:linear-gradient(45deg, var(--color-navy-dark) 0%, var(--color-sky-dark) 100%);`;
+            const iconHTML = article.cover_image ? '' : `<i data-lucide="cpu" style="width:32px; height:32px;"></i>`;
+
+            return `
+              <div class="news-card">
+                <div class="news-img-placeholder" style="${imageStyle}">
+                  ${iconHTML}
+                </div>
+                <div class="news-content" style="padding:1.25rem;">
+                  <div class="news-content-top">
+                    <span class="news-date">${date}</span>
+                    <h3 style="font-size:1.05rem;">${article.title}</h3>
+                    <p style="font-size:0.8rem; line-height:1.4;">${article.description || ''}</p>
+                  </div>
+                  <a href="${article.url}" target="_blank" rel="noopener" style="font-size:0.8rem; font-weight:700; text-transform:uppercase; margin-top:1rem; display:inline-flex; align-items:center; gap:0.25rem;">
+                    Read Article <i data-lucide="arrow-right" style="width:12px; height:12px;"></i>
+                  </a>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }
+      }
+    } catch (error) {
+      console.warn("Failed to fetch live IT news, keeping default news.", error);
+    }
   }
 });
